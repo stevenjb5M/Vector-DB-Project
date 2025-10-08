@@ -6,21 +6,59 @@ import psycopg2
 
 load_dotenv()
 
-CONNECTION = None # paste connection string here or read from .env file
+CONNECTION = "postgres://tsdbadmin:bnk1i1unmn9k0xg7@kl48wuew8y.en3bm5at9b.tsdb.cloud.timescale.com:34003/tsdb?sslmode=require"
 
 # need to run this to enable vector data type
 CREATE_EXTENSION = "CREATE EXTENSION vector"
 
-# TODO: Add create table statement
+# Create podcast table
 CREATE_PODCAST_TABLE = """
-
+CREATE TABLE IF NOT EXISTS podcast (
+    id VARCHAR(255) PRIMARY KEY,
+    title TEXT NOT NULL
+);
 """
-# TODO: Add create table statement
-CREATE_SEGMENT_TABLE = """
 
+# Create segment table with vector embedding
+CREATE_SEGMENT_TABLE = """
+CREATE TABLE IF NOT EXISTS segment (
+    id VARCHAR(255) PRIMARY KEY,
+    start_time FLOAT,
+    end_time FLOAT,
+    content TEXT NOT NULL,
+    embedding VECTOR(128),
+    podcast_id VARCHAR(255) NOT NULL,
+    FOREIGN KEY (podcast_id) REFERENCES podcast(id)
+);
 """
 
 conn = psycopg2.connect(CONNECTION)
-# TODO: Create tables with psycopg2 (example: https://www.geeksforgeeks.org/executing-sql-query-with-psycopg2-in-python/)
+
+try:
+    cursor = conn.cursor()
+    
+    # Enable vector extension
+    print("Creating vector extension...")
+    cursor.execute(CREATE_EXTENSION)
+    
+    # Create podcast table
+    print("Creating podcast table...")
+    cursor.execute(CREATE_PODCAST_TABLE)
+    
+    # Create segment table
+    print("Creating segment table...")
+    cursor.execute(CREATE_SEGMENT_TABLE)
+    
+    # Commit the changes
+    conn.commit()
+    print("Tables created successfully!")
+    
+except Exception as e:
+    print(f"Error creating tables: {e}")
+    conn.rollback()
+    
+finally:
+    cursor.close()
+    conn.close()
 
 
