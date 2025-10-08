@@ -70,10 +70,8 @@ def create_segment_dataframe(segments_df, embeddings_df):
     """Merge segment data with embeddings and prepare for database insertion"""
     print("Creating segment dataframe...")
     
-    # Merge segments with embeddings on custom_id
     merged_df = segments_df.merge(embeddings_df, on='custom_id', how='inner')
     
-    # Prepare the segment dataframe for database insertion
     segment_df = pd.DataFrame({
         'id': merged_df['custom_id'],
         'start_time': merged_df['start_time'],
@@ -88,21 +86,17 @@ def create_segment_dataframe(segments_df, embeddings_df):
 def main():
     print("Starting data insertion process...")
     
-    # Load all data
     segments_df = load_batch_request_data()
     embeddings_df = load_embedding_data()
     
     print(f"Loaded {len(segments_df)} segments and {len(embeddings_df)} embeddings")
     
-    # Create podcast dataframe
     podcasts_df = create_podcast_dataframe(segments_df)
     print(f"Found {len(podcasts_df)} unique podcasts")
     
-    # Create segment dataframe
     segments_final_df = create_segment_dataframe(segments_df, embeddings_df)
     print(f"Created {len(segments_final_df)} segment records for insertion")
     
-    # Insert podcasts into database
     print("Inserting podcasts into database...")
     fast_pg_insert(
         df=podcasts_df,
@@ -112,7 +106,6 @@ def main():
     )
     print(f"Inserted {len(podcasts_df)} podcasts")
     
-    # Insert segments into database
     print("Inserting segments into database...")
     fast_pg_insert(
         df=segments_final_df,

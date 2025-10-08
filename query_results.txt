@@ -1,0 +1,219 @@
+Running Vector Database Queries
+==================================================
+
+Q1: Five most similar segments to segment '267:476'
+============================================================
+1. Segment ID: 113:2792
+   Podcast: Podcast: Ryan Graves: UFOs, Fighter Jets, and Aliens | Lex Fridman Podcast #308
+   Text:  encounters, human beings, if we were to meet another alien...
+   Time: 6725.62s - 6729.86s
+   Distance: 0.648345
+
+2. Segment ID: 268:1019
+   Podcast: Podcast: Richard Dawkins: Evolution, Intelligence, Simulation, and Memes | Lex Fridman Podcast #87
+   Text:  Suppose we did meet an alien from outer space...
+   Time: 2900.04s - 2903.08s
+   Distance: 0.655811
+
+3. Segment ID: 305:3600
+   Podcast: Podcast: Jeffrey Shainline: Neuromorphic Computing and Optoelectronic Intelligence | Lex Fridman Podcast #225
+   Text:  but if we think of alien civilizations out there...
+   Time: 9479.96s - 9484.04s
+   Distance: 0.659543
+
+4. Segment ID: 18:464
+   Podcast: Podcast: Michio Kaku: Future of Humans, Aliens, Space Travel & Physics | Lex Fridman Podcast #45
+   Text:  So I think when we meet alien life from outer space,...
+   Time: 1316.86s - 1319.58s
+   Distance: 0.666203
+
+5. Segment ID: 71:989
+   Podcast: Podcast: Alien Debate: Sara Walker and Lee Cronin | Lex Fridman Podcast #279
+   Text:  because if aliens come to us...
+   Time: 2342.34s - 2343.62s
+   Distance: 0.674294
+
+
+================================================================================
+
+Q2: Five most dissimilar segments to segment '267:476'
+============================================================
+1. Segment ID: 119:218
+   Podcast: Podcast: Jason Calacanis: Startups, Angel Investing, Capitalism, and Friendship | Lex Fridman Podcast #161
+   Text:  a 73 Mustang Grande in gold?...
+   Time: 519.96s - 523.80s
+   Distance: 1.615769
+
+2. Segment ID: 133:2006
+   Podcast: Podcast: Rana el Kaliouby: Emotion AI, Social Robots, and Self-Driving Cars | Lex Fridman Podcast #322
+   Text:  for 94 car models....
+   Time: 5818.62s - 5820.82s
+   Distance: 1.586336
+
+3. Segment ID: 283:1488
+   Podcast: Podcast: Travis Stevens: Judo, Olympics, and Mental Toughness | Lex Fridman Podcast #223
+   Text:  when I called down to get the sauna....
+   Time: 3709.34s - 3711.10s
+   Distance: 1.572553
+
+4. Segment ID: 241:1436
+   Podcast: Podcast: Jeremy Howard: fast.ai Deep Learning Courses and Research | Lex Fridman Podcast #35
+   Text:  which has all the courses pre-installed....
+   Time: 4068.90s - 4071.14s
+   Distance: 1.566332
+
+5. Segment ID: 307:3933
+   Podcast: Podcast: Joscha Bach: Nature of Reality, Dreams, and Consciousness | Lex Fridman Podcast #212
+   Text:  and very few are first class and some are budget....
+   Time: 10648.64s - 10650.96s
+   Distance: 1.561634
+
+
+================================================================================
+
+Q3: Five most similar segments to segment '48:511'
+============================================================
+1. Segment ID: 155:648
+   Podcast: Podcast: Andrew Huberman: Neuroscience of Optimal Performance | Lex Fridman Podcast #139
+   Text:  Is there something interesting to you or fundamental to you about the circuitry of the brain...
+   Time: 3798.48s - 3805.84s
+   Distance: 0.652300
+
+2. Segment ID: 61:3707
+   Podcast: Podcast: Cal Newport: Deep Work, Focus, Productivity, Email, and Social Media | Lex Fridman Podcast #166
+   Text:  of what we might discover about neural networks?...
+   Time: 8498.02s - 8500.10s
+   Distance: 0.712105
+
+3. Segment ID: 48:512
+   Podcast: Podcast: Matt Botvinick: Neuroscience, Psychology, and AI at DeepMind | Lex Fridman Podcast #106
+   Text:  And our brain is there. There's some there's quite a few differences. Are some of them to you eithe...
+   Time: 1846.84s - 1865.84s
+   Distance: 0.719560
+
+4. Segment ID: 276:2642
+   Podcast: Podcast: Yann LeCun: Dark Matter of Intelligence and Self-Supervised Learning | Lex Fridman Podcast #258
+   Text:  Have these, I mean, small pockets of beautiful complexity. Does that, do cellular automata, do thes...
+   Time: 8628.16s - 8646.16s
+   Distance: 0.735722
+
+5. Segment ID: 2:152
+   Podcast: Podcast: Stephen Wolfram: Fundamental Theory of Physics, Life, and the Universe | Lex Fridman Podcast #124
+   Text:  So is there something like that with physics where so deep learning neural networks have been aroun...
+   Time: 610.86s - 618.86s
+   Distance: 0.736697
+
+
+================================================================================
+
+Q4: Five most similar segments to segment '51:56'
+============================================================
+1. Segment ID: 308:144
+   Podcast: Podcast: George Hotz: Hacking the Simulation & Learning to Drive with Neural Nets | Lex Fridman Podcast #132
+   Text:  I mean, we don't understand dark energy, right?...
+   Time: 500.44s - 502.60s
+   Distance: 0.668197
+
+2. Segment ID: 243:273
+   Podcast: Podcast: Lex Fridman: Ask Me Anything - AMA January 2021 | Lex Fridman Podcast
+   Text:  Like, what's up with this dark matter and dark energy stuff?...
+   Time: 946.22s - 950.12s
+   Distance: 0.735551
+
+3. Segment ID: 196:685
+   Podcast: Podcast: Katherine de Kleer: Planets, Moons, Asteroids & Life in Our Solar System | Lex Fridman Podcast #184
+   Text:  being like, what the hell is dark matter and dark energy?...
+   Time: 2591.72s - 2595.96s
+   Distance: 0.763114
+
+4. Segment ID: 51:36
+   Podcast: Podcast: Alex Filippenko: Supernovae, Dark Energy, Aliens & the Expanding Universe | Lex Fridman Podcast #137
+   Text:  Do we have any understanding of what the heck that thing is?...
+   Time: 216.00s - 219.00s
+   Distance: 0.792202
+
+5. Segment ID: 122:831
+   Podcast: Podcast: Leonard Susskind: Quantum Mechanics, String Theory and Black Holes | Lex Fridman Podcast #41
+   Text:  That is a big question in physics right now....
+   Time: 2374.90s - 2377.62s
+   Distance: 0.802270
+
+
+================================================================================
+
+Q5: Most similar podcast episodes (by segment embedding averaging)
+======================================================================
+
+Q5a: Similar podcasts to segment '267:476'
+--------------------------------------------------
+1. Podcast: Sara Walker: The Origin of Life on Earth and Alien Worlds | Lex Fridman Podcast #198
+   Distance: 0.782898
+
+2. Podcast: Martin Rees: Black Holes, Alien Life, Dark Matter, and the Big Bang | Lex Fridman Podcast #305
+   Distance: 0.787950
+
+3. Podcast: Max Tegmark: Life 3.0 | Lex Fridman Podcast #1
+   Distance: 0.788690
+
+4. Podcast: Sean Carroll: The Nature of the Universe, Life, and Intelligence | Lex Fridman Podcast #26
+   Distance: 0.789065
+
+5. Podcast: Nick Bostrom: Simulation and Superintelligence | Lex Fridman Podcast #83
+   Distance: 0.791121
+
+
+Q5b: Similar podcasts to segment '48:511'
+--------------------------------------------------
+1. Podcast: Christof Koch: Consciousness | Lex Fridman Podcast #2
+   Distance: 0.753780
+
+2. Podcast: Dileep George: Brain-Inspired AI | Lex Fridman Podcast #115
+   Distance: 0.760515
+
+3. Podcast: Tomaso Poggio: Brains, Minds, and Machines | Lex Fridman Podcast #13
+   Distance: 0.761555
+
+4. Podcast: Elon Musk: Neuralink, AI, Autopilot, and the Pale Blue Dot | Lex Fridman Podcast #49
+   Distance: 0.776152
+
+5. Podcast: Philip Goff: Consciousness, Panpsychism, and the Philosophy of Mind | Lex Fridman Podcast #261
+   Distance: 0.787206
+
+
+Q5c: Similar podcasts to segment '51:56'
+--------------------------------------------------
+1. Podcast: Sean Carroll: Quantum Mechanics and the Many-Worlds Interpretation | Lex Fridman Podcast #47
+   Distance: 0.776714
+
+2. Podcast: Stephen Wolfram: Fundamental Theory of Physics, Life, and the Universe | Lex Fridman Podcast #124
+   Distance: 0.808071
+
+3. Podcast: Donald Hoffman: Reality is an Illusion - How Evolution Hid the Truth | Lex Fridman Podcast #293
+   Distance: 0.816583
+
+4. Podcast: Cumrun Vafa: String Theory | Lex Fridman Podcast #204
+   Distance: 0.817347
+
+5. Podcast: Avi Loeb: Aliens, Black Holes, and the Mystery of the Oumuamua | Lex Fridman Podcast #154
+   Distance: 0.825452
+
+
+================================================================================
+
+Q6: Most similar podcasts to Balaji Srinivasan episode (VeH7qKZr0WI)
+======================================================================
+1. Podcast: Tyler Cowen: Economic Growth & the Fight Against Conformity & Mediocrity | Lex Fridman Podcast #174
+   Distance: 0.119501
+
+2. Podcast: Eric Weinstein: Difficult Conversations, Freedom of Speech, and Physics | Lex Fridman Podcast #163
+   Distance: 0.125714
+
+3. Podcast: Michael Malice and Yaron Brook: Ayn Rand, Human Nature, and Anarchy | Lex Fridman Podcast #178
+   Distance: 0.128427
+
+4. Podcast: Steve Keen: Marxism, Capitalism, and Economics | Lex Fridman Podcast #303
+   Distance: 0.129163
+
+5. Podcast: Michael Malice: The White Pill, Freedom, Hope, and Happiness Amidst Chaos | Lex Fridman Podcast #150
+   Distance: 0.130409
+
