@@ -6,7 +6,7 @@ import psycopg2
 
 load_dotenv()
 
-CONNECTION = "postgres://tsdbadmin:bnk1i1unmn9k0xg7@kl48wuew8y.en3bm5at9b.tsdb.cloud.timescale.com:34003/tsdb?sslmode=require"
+CONNECTION = os.getenv("DATABASE_URL")
 
 # need to run this to enable vector data type
 CREATE_EXTENSION = "CREATE EXTENSION vector"
